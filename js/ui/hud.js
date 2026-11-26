@@ -58,7 +58,7 @@
     clampV();
   }
   function resize() {
-    DPR = Math.min(2, window.devicePixelRatio || 1);
+    DPR = EF.DPR = Math.min(2, window.devicePixelRatio || 1);
     const w = innerWidth, h = innerHeight;
     const tall = !!(document.body && document.body.classList && document.body.classList.contains('tall'));
     cv.width = Math.round(w * DPR); cv.height = Math.round(h * DPR);
